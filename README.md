@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 
-Module #2. The Homework #2
+Module #3. The Homework #3
