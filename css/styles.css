@@ -14,14 +14,13 @@
 h1,
 h2,
 h3,
-h4,
 p {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
-ul,
-ol {
+ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -43,7 +42,8 @@ ol {
 }
 
 /* Opened tab effect for buttons*/
-.open-btn.current {
+.open-btn.current,
+.hero-btn.current {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -64,8 +64,6 @@ address {
   font-style: normal;
 }
 
-/* ===Projects text&color styles=== */
-
 body {
   background-color: var(--background-color);
   color: var(--secodary-text-color-theme-light);
@@ -76,20 +74,44 @@ body {
 }
 
 .container {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+/* ===== Projects text&color styles ===== */
 
+/* === Header ===*/
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+.list-header {
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
+}
 /* Logo blu part */
 .logo-header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* Logo black part */
@@ -98,7 +120,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #000000;
 }
@@ -149,7 +170,22 @@ body {
   color: var(--accent-color);
 }
 
+/* === Hero === */
+
 .hero {
+  height: 600px;
+  width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--bacground-text-color-theme-dark);
 }
 
@@ -162,17 +198,32 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
-/* Buttons css */
-.open-btn {
+/* Buttons */
+.hero-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+  min-width: 216px;
+  min-height: 50px;
+  margin-bottom: 200px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--accent-color);
 }
 
 .open-btn:hover,
@@ -181,10 +232,36 @@ body {
   background-color: var(--accent-color);
 }
 
+.open-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+}
+
+/* === Benefits section #2 ===*/
 /* Section two markup */
+.benefits {
+  margin-bottom: 94px;
+}
+.benefits-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.benefits-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .section-two-header {
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color-theme-light);
@@ -195,7 +272,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Section three four markup */
+/* === Picture Section #3 ===*/
 .section-title {
   font-size: 36px;
   line-height: 1.17;
@@ -203,7 +280,18 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-light);
 }
+.picture-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+/* === Team Section #4 === */
 
+.cards-list {
+  display: flex;
+}
 .section-four-manager {
   font-weight: 500;
   font-size: 16px;
@@ -222,9 +310,19 @@ body {
 
 /* Footer markup*/
 .footer {
+  height: 252px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bacground-text-color-theme-dark);
 }
-
+.address-footer {
+  margin-top: 20px;
+}
 .address-link {
   font-size: 14px;
   line-height: 1.71px;
@@ -251,7 +349,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-dark);
 }
-
+.footer-li:not(:last-child) {
+  margin-right: 9px;
+}
 /* Portfolio tab css */
 
 .list-portfolio {
