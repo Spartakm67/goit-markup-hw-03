@@ -42,73 +42,101 @@
     </header>
     <main>
         <!--Main Section-->
-        <section>
+        <section class="team-activities">
             <!--This Header will be hidden-->
-            <h1 class="visually-hidden">Портфоліо проектів</h1>
-            <ul class="list">
-                <li><button class="open-btn current" type="button">Усі</button></li>
-                <li><button class="open-btn" type="button">Веб-сайти</button></li>
-                <li><button class="open-btn" type="button">Додатки</button></li>
-                <li><button class="open-btn" type="button">Дизайн</button></li>
-                <li><button class="open-btn" type="button">Маркетинг</button></li>
-            </ul>
-            <ul class="list">
-                <li>
-                    <a href="#" class="list-portfolio">
-                        <img src="./images/portfolio/project1.jpg" alt="Фото і дані трьох девелоперів" width="370">
-                        <h3 class="portfolio-header">Технокряк</h3>
-                        <p class="potfolio-href">Веб-сайт</p>
-                    </a>
-                </li>
-                <li><a href="#" class="list-portfolio">
-                        <img src="./images/portfolio/project2.jpg" alt="Два баскетболісти" width="370">
-                        <h3 class="portfolio-header">Постер New Orlean vs Golden Star</h3>
-                        <p class="potfolio-href">Дизайн</p>
-                    </a>
-                </li>
-                <li><a href="#" class="list-portfolio">
-                        <img src="./images/portfolio/project3.jpg" alt="Логотип ресторану" width="370">
-                        <h3 class="portfolio-header">Ресторан Seafood</h3>
-                        <p class="potfolio-href">Додаток</p>
-                    </a>
-                </li>
-                <li><a href="#" class="list-portfolio">
-                        <img src="./images/portfolio/project4.jpg" alt="Зображення навушників" width="370">
-                        <h3 class="portfolio-header">Проєкт Prime</h3>
-                        <p class="potfolio-href">Маркетинг</p>
-                    </a>
-                </li>
-                <li><a href="#" class="list-portfolio">
-                        <img src="./images/portfolio/project5.jpg" alt="Зображення коробок" width="370">
-                        <h3 class="portfolio-header">Проєкт Boxes</h3>
-                        <p class="potfolio-href">Додаток</p>
-                    </a>
-                </li>
-                <li><a href="#" class="list-portfolio">
-                        <img src="./images/portfolio/project6.jpg" alt="Зображення монітору" width="370">
-                        <h3 class="portfolio-header">Inspiration has no Borders</h3>
-                        <p class="potfolio-href">Веб-сайт</p>
-                    </a>
-                </li>
-                <li><a href="#" class="list-portfolio">
-                        <img src="./images/portfolio/project7.jpg" alt="Розкрита книга" width="370">
-                        <h3 class="portfolio-header">Видання Limited Edition</h3>
-                        <p class="potfolio-href">Дизайн</p>
-                    </a>
-                </li>
-                <li><a href="#" class="list-portfolio">
-                        <img src="./images/portfolio/project8.jpg" alt="Логотип проекту LAB" width="370">
-                        <h3 class="portfolio-header">Проєкт LAB</h3>
-                        <p class="potfolio-href">Маркетинг</p>
-                    </a>
-                </li>
-                <li><a href="#" class="list-portfolio">
-                        <img src="./images/portfolio/project9.jpg" alt="Людина працює на ноутбуці" width="370">
-                        <h3 class="portfolio-header">Growing Business</h3>
-                        <p class="potfolio-href">Додаток</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="container">
+                <h1 class="visually-hidden">Портфоліо проектів</h1>
+                <ul class="filters list">
+                    <li><button class="open-btn current" type="button">Усі</button></li>
+                    <li><button class="open-btn" type="button">Веб-сайти</button></li>
+                    <li><button class="open-btn" type="button">Додатки</button></li>
+                    <li><button class="open-btn" type="button">Дизайн</button></li>
+                    <li><button class="open-btn" type="button">Маркетинг</button></li>
+                </ul>
+                <ul class="cards-portfolio-list list">
+                    <li class="portfolio-item">
+                        <a href="#" class="list-portfolio">
+                            <img src="./images/portfolio/project1.jpg" alt="Фото і дані трьох девелоперів" width="370">
+                            <div class="portfolio-item-title">
+                                <h3 class="portfolio-header">Технокряк</h3>
+                                <p class="potfolio-href">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="list-portfolio">
+                            <img src="./images/portfolio/project2.jpg" alt="Два баскетболісти" width="370">
+                            <div class="portfolio-item-title">
+                                <h3 class="portfolio-header">Постер New Orlean vs Golden Star</h3>
+                                <p class="potfolio-href">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="list-portfolio">
+                            <img src="./images/portfolio/project3.jpg" alt="Логотип ресторану" width="370">
+                            <div class="portfolio-item-title">
+                                <h3 class="portfolio-header">Ресторан Seafood</h3>
+                                <p class="potfolio-href">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="list-portfolio">
+                            <img src="./images/portfolio/project4.jpg" alt="Зображення навушників" width="370">
+                            <div class="portfolio-item-title">
+                                <h3 class="portfolio-header">Проєкт Prime</h3>
+                                <p class="potfolio-href">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="list-portfolio">
+                            <img src="./images/portfolio/project5.jpg" alt="Зображення коробок" width="370">
+                            <div class="portfolio-item-title">
+                                <h3 class="portfolio-header">Проєкт Boxes</h3>
+                                <p class="potfolio-href">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="list-portfolio">
+                            <img src="./images/portfolio/project6.jpg" alt="Зображення монітору" width="370">
+                            <div class="portfolio-item-title">
+                                <h3 class="portfolio-header">Inspiration has no Borders</h3>
+                                <p class="potfolio-href">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="list-portfolio">
+                            <img src="./images/portfolio/project7.jpg" alt="Розкрита книга" width="370">
+                            <div class="portfolio-item-title">
+                                <h3 class="portfolio-header">Видання Limited Edition</h3>
+                                <p class="potfolio-href">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="list-portfolio">
+                            <img src="./images/portfolio/project8.jpg" alt="Логотип проекту LAB" width="370">
+                            <div class="portfolio-item-title">
+                                <h3 class="portfolio-header">Проєкт LAB</h3>
+                                <p class="potfolio-href">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-item">
+                        <a href="#" class="list-portfolio">
+                            <img src="./images/portfolio/project9.jpg" alt="Людина працює на ноутбуці" width="370">
+                            <div class="portfolio-item-title">
+                                <h3 class="portfolio-header">Growing Business</h3>
+                                <p class="potfolio-href">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
